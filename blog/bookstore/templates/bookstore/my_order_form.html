@@ -1,0 +1,13 @@
+{% extends "bookstore/main.html" %}
+{% load static %}
+
+{% block content %}
+<form class="row g-3" action="" method="post">
+  {% csrf_token %}
+    {{form}}
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </form>
+{% endblock content %}
+      
